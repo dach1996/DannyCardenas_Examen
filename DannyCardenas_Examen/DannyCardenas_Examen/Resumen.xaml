@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DannyCardenas_Examen.Resumen">
+    <ContentPage.Resources>
+        <Style TargetType="Label" >
+            <Setter Property="TextColor" Value="Black" ></Setter>
+            <Setter Property="FontSize" Value="20" ></Setter>
+            <Setter Property="VerticalOptions" Value="End" ></Setter>
+        </Style>
+        <Style TargetType="Entry" >
+            <Setter Property="TextColor" Value="Gray" ></Setter>
+            <Setter Property="FontSize" Value="20" ></Setter>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions  >
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="RESUMEN DE DATOS" Grid.ColumnSpan="2"  FontSize="25" HorizontalTextAlignment="Center" FontAttributes="Italic"/>
+            <Label Text="Usuario: " Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtUsuario" Grid.Row="1" Grid.Column="1" IsEnabled="False"/>
+            <Label Text="Nombre Usuario:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtNombreUsuario" Grid.Row="2" Grid.Column="1" IsEnabled="False"/>
+            <Label Text="Cuotas a Pagar" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtPagoMensual" Grid.Row="3" Grid.Column="1" IsEnabled="False"/>
+            <Label Text="Total a Pagar" Grid.Row="4" Grid.Column="0"/>
+            <Entry x:Name="txtTotalPagar" Grid.Row="4" Grid.Column="1" IsEnabled="False"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

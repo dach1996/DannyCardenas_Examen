@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DannyCardenas_Examen.Login">
+    <ContentPage.Content>
+        <Grid>
+
+            <BoxView Color="AliceBlue" Opacity="0.8"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+
+                </Grid.RowDefinitions>
+
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Label Text="Cursos Online" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" Aspect="AspectFill" />
+                    <Entry x:Name="txtUsuario" Placeholder="Usuario" PlaceholderColor="Gray" />
+                    <Entry x:Name="txtPassword" Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="True" />
+                    <Button Text="Iniciar Sesión"  BorderRadius="20" TextColor="Black"  Clicked="Button_Clicked"/>
+
+                </StackLayout>
+
+
+
+            </Grid>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
