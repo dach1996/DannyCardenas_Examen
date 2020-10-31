@@ -57,6 +57,7 @@ namespace DannyCardenas_Examen
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
             nombreUsuario = txtNombre.Text;
+
             await Navigation.PushAsync(new Resumen(usuario,nombreUsuario,cuotasPagar*3));
         }
 
